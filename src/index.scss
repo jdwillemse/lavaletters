@@ -22,7 +22,14 @@ path {
   transform: translate(0, 200px);
 }
 
+
+
 $colors: [#11312F, #11818B, #07C9A9, #3BF75D, #AFFE6D];
+// $colors: [#174791, #7F3477, #B32B6B, #CD2664, #E7215E];
+// $colors: [#513987, #8D67DF, #23BEE6, #11C7AC, #DFF73D];
+
+
+
 $sizes: [3.5, 3, 2.5, 2, 1.5, 1];
 
 @for $i from 1 through 5 {
