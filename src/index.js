@@ -66,15 +66,15 @@ for (let i = 1; i <= 5; i++) {
 			let scale = 1;
 
 			if (j > 12) {
-				scale = [{ value: 0, duration: 0 },{ 
-					value: 1, 
-					duration: 600, 
+				scale = [{ value: 0, duration: 0 },{
+					value: 1,
+					duration: 600,
 					easing: 'easeOutBack'
-				}, { 
-					value: 0, 
-					duration: 600, 
-					easing: 'easeInBack', 
-					delay: animDuration - randomBetween(600, 3000) 
+				}, {
+					value: 0,
+					duration: 600,
+					easing: 'easeInBack',
+					delay: animDuration - randomBetween(600, 3000)
 				}];
 
 				outerGroup.append(path);
@@ -83,12 +83,10 @@ for (let i = 1; i <= 5; i++) {
 				innerGroup.append(path);
 			}
 
-			const anim = 8;
-
 			tl.add(anime({
 			  targets: path,
 			  translateX: [{ value: randomBetween(0, canvasWidth - 20), duration: 0 }],
-			  translateY: j <= 12 
+			  translateY: j <= 12
 			  	? [
 						  { value: canvasHeight, duration: 0 },
 						  { value: canvasHeight - letterHeight, duration: animDuration }
@@ -96,7 +94,7 @@ for (let i = 1; i <= 5; i++) {
 				  : [
 						  { value: canvasHeight - 20, duration: 0 },
 						  { value: randomBetween(0, 100), duration: animDuration }
-					  ],		
+					  ],
 			  scale,
 				easing: 'linear',
 			  loop: true,
