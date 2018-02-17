@@ -7,6 +7,11 @@ html {
   background: #efefef;
 }
 
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
 path {
   // transform-origin: center;
 }
