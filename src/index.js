@@ -19,7 +19,7 @@ const blobDefs = [
 	"M2.413 17.896C-1.39 9.617 5.315 2.827 9.483 1.584 13.596.246 17.047.86 21.419 5.822c4.283 5.017 2.807 9.273-1.93 13.833-4.59 4.6-13.214 6.615-17.075-1.759z"
 ];
 	const svgParent = document.querySelector("#generated");
-	const canvasWidth = svgParent.clientWidth;
+	const canvasWidth = svgParent.clientWidth - 50;
 	const canvasHeight = svgParent.clientHeight;
 	const letterHeight = 450;
 
