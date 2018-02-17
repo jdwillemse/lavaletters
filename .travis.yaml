@@ -1,0 +1,12 @@
+deploy:
+  - provider: script
+    skip_cleanup: true
+    script: yarn build
+    on:
+      branch: master
+
+  - provider: script
+    skip_cleanup: true
+    script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/build fuzzyvagina@robert-treat-paine.dreamhost.com:_tmp
+    on:
+      branch: master
